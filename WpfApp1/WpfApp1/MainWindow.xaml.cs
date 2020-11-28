@@ -19,6 +19,10 @@ using NAudio.Wave;
 using NAudio.FileFormats;
 using NAudio.CoreAudioApi;
 using NAudio;
+using System.Globalization;
+
+
+
 
 namespace WpfApp1
 {
@@ -28,23 +32,21 @@ namespace WpfApp1
     public partial class MainWindow : Window
     {
         WaveIn waveIn;
-
+        
         WaveFileWriter writer;
 
         string outputFilename = "имя_файла.wav";
         public MainWindow()
         {
             InitializeComponent();
-
-
+            
         }
 
-
-        
+       
 
         public bool InvokeRequired { get; private set; }
 
-       
+        [Obsolete]
         void waveIn_DataAvailable(object sender, WaveInEventArgs e)
         {
             if (this.InvokeRequired)
@@ -92,8 +94,10 @@ namespace WpfApp1
 
         private void Start_Click(object sender, RoutedEventArgs e)
         {
+            
             try
             {
+                
                 MessageBox.Show("Start Recording");
                 waveIn = new WaveIn();
                 //Дефолтное устройство для записи (если оно имеется)
@@ -109,9 +113,13 @@ namespace WpfApp1
                 writer = new WaveFileWriter(outputFilename, waveIn.WaveFormat);
                 //Начало записи
                 waveIn.StartRecording();
+                
+                
+                
             }
             catch (Exception ex)
             { MessageBox.Show(ex.Message); }
+            
         }
 
         private void stop_Click(object sender, RoutedEventArgs e)
@@ -120,14 +128,17 @@ namespace WpfApp1
             {
                 StopRecording();
             }
+            
         }
 
         private void SpeakBtn_Click(object sender, RoutedEventArgs e)
         {
             SpeechSynthesizer speak = new SpeechSynthesizer();
-
-            speak.Speak(SpeakTxt.Text);
+            speak.SelectVoiceByHints(VoiceGender.Male,VoiceAge.Senior);
+            speak.SpeakAsync(SpeakTxt.Text);
         }
+
+        
     }
     
     
