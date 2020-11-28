@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\student20\source\repos\Hakaton\WpfApp1\WpfApp1\App.xaml
-11151548125
+4164942605
 
-5-2017746502
+8271122731
 126-45799579
-MainWindow.xaml;
+MainWindow.xaml;Pages\MainPage.xaml;Pages\Record.xaml;Pages\Speak.xaml;
 
 False
 

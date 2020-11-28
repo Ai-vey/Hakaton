@@ -5,16 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800"  >
-    <Grid >
-        
-        <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
-            <Button Name="Start" Margin="5" Height="50" Width="200" Click="Start_Click" Content="Record"/>
-            <Button Name="stop" Margin="5" Height="50" Width="200" Click="stop_Click" Content="Stop"/>
-            <TextBox Name="SpeakTxt" Margin="5" Width="200" Height="100" AcceptsReturn="True" TextWrapping="Wrap"/>
-            <Button Name="SpeakBtn" Margin="5" Height="50" Width="200" Click="SpeakBtn_Click" Content="Speak"/>
-            
-
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded"  >
+    <Grid>
+        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Left">
+            <Button Margin="15" Name="BtnBack" Height="30" Width="60" Content="back" Click="BtnBack_Click"/>
         </StackPanel>
+        <Frame x:Name="MainFrame" Navigated="MainFrame_Navigated" NavigationUIVisibility="Hidden" ContentRendered="MainFrame_ContentRendered_1" Grid.Column="0"/>
     </Grid>
 </Window>

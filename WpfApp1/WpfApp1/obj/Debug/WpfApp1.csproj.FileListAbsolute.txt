@@ -50,3 +50,9 @@ C:\Users\student20\source\repos\Hakaton\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj
 C:\Users\student20\source\repos\Hakaton\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.CopyComplete
 C:\Users\student20\source\repos\Hakaton\WpfApp1\WpfApp1\obj\Debug\WpfApp1.exe
 C:\Users\student20\source\repos\Hakaton\WpfApp1\WpfApp1\obj\Debug\WpfApp1.pdb
+C:\Users\student20\source\repos\Hakaton\WpfApp1\WpfApp1\obj\Debug\Pages\MainPage.g.cs
+C:\Users\student20\source\repos\Hakaton\WpfApp1\WpfApp1\obj\Debug\Pages\Record.g.cs
+C:\Users\student20\source\repos\Hakaton\WpfApp1\WpfApp1\obj\Debug\Pages\Speak.g.cs
+C:\Users\student20\source\repos\Hakaton\WpfApp1\WpfApp1\obj\Debug\Pages\MainPage.baml
+C:\Users\student20\source\repos\Hakaton\WpfApp1\WpfApp1\obj\Debug\Pages\Record.baml
+C:\Users\student20\source\repos\Hakaton\WpfApp1\WpfApp1\obj\Debug\Pages\Speak.baml
