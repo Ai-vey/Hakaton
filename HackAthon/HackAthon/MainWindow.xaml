@@ -1,0 +1,20 @@
+﻿<Window x:Class="HackAthon.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HackAthon"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center ">
+            <Button Name="RecordBtn" Height="50" Width="200" Click="RecordBtn_Click" Content="Record"/>
+            <TextBlock Name="Timer"/>
+            <StackPanel Orientation="Horizontal">
+                
+            <Button Name="Save" Height="50" Width="200" Click="Save_Click" Margin="5" Content="Save"/>
+            <Button Name="Play" Height="50" Width="200" Click="Play_Click" Margin="5" Content="Play"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
