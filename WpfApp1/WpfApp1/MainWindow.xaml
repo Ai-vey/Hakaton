@@ -12,6 +12,7 @@
             <Button Name="stop" Margin="5" Height="50" Width="200" Click="stop_Click" Content="Stop"/>
             <TextBox Name="SpeakTxt" Margin="5" Width="200" Height="100"/>
             <Button Name="SpeakBtn" Margin="5" Height="50" Width="200" Click="SpeakBtn_Click" Content="Speak"/>
+            <Button Name="SpeakBtn1" Margin="5" Height="50" Width="200" Click="SpeakBtn1_Click" Content="Speak"/>
         </StackPanel>
     </Grid>
 </Window>
